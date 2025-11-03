@@ -1,6 +1,6 @@
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
-            xmlns="https://cward10.github.io/cse445_a4/Hotels.xml" 
-            targetNamespace="https://cward10.github.io/cse445_a4/Hotels.xml" 
+            xmlns="http://cward10.github.io/cse445_a4/Hotels.xml" 
+            targetNamespace="http://cward10.github.io/cse445_a4/Hotels.xml" 
             elementFormDefault="qualified" attributeFormDefault="unqualified" >
     
 <xsd:annotation>
@@ -51,3 +51,4 @@
 
 
 </xsd:schema>
+
