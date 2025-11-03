@@ -1,5 +1,8 @@
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://venus.sod.asu.edu/WSRepository/xml" targetNamespace="http://venus.sod.asu.edu/WSRepository/xml" elementFormDefault="qualified" attributeFormDefault="unqualified" >
-
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+            xmlns="https://cward10.github.io/cse445_a4/Hotels.xml" 
+            targetNamespace="https://cward10.github.io/cse445_a4/Hotels.xml" 
+            elementFormDefault="qualified" attributeFormDefault="unqualified" >
+    
 <xsd:annotation>
 <xsd:documentation xml:lang="en"> CSE445 XSD file. </xsd:documentation>
 </xsd:annotation>
@@ -45,5 +48,6 @@
 <xsd:pattern value="\d{3}\-\d{3} \d{4}"/>
 </xsd:restriction>
 </xsd:simpleType>
+
 
 </xsd:schema>
