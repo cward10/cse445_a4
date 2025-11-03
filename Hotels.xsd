@@ -1,0 +1,49 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://venus.sod.asu.edu/WSRepository/xml" targetNamespace="http://venus.sod.asu.edu/WSRepository/xml" elementFormDefault="qualified" attributeFormDefault="unqualified" >
+
+<xsd:annotation>
+<xsd:documentation xml:lang="en"> CSE445 XSD file. </xsd:documentation>
+</xsd:annotation>
+<!-- Hotels-->
+<xsd:element name="Hotels" type="HotelsTypes"/>
+
+<xsd:complexType name="HotelsTypes">
+<xsd:sequence>
+
+    
+    <xsd:element name="Hotel" type="HotelDetails" minOccurs="1" maxOccurs="unbounded"/>
+
+</xsd:sequence>
+</xsd:complexType>
+<!--  hotel details must contain name(1) phone(unbound) address(1) optional (rating) -->
+
+<xsd:complexType name="HotelDetails">
+    <xsd:sequence>
+        <xsd:element name="Name" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+        <xsd:element name="phone" type="PhoneType" minOccurs="1" maxOccurs="unbounded"/>
+        <xsd:element name="Address" type="AddressType" minOccurs="1" maxOccurs="1"/>
+    </xsd:sequence>
+<xsd:attribute name="Rating" type="xsd:double" use="optional"/>
+</xsd:complexType>
+
+<!-- Address Type contains number(1) street(1) city(!) state(1) required(NearestAirport)-->
+<xsd:complexType name="AddressType">
+<xsd:sequence>
+    <xsd:element name="Number" type="xsd:int" minOccurs="1" maxOccurs="1"/>
+    <xsd:element name="street" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+    <xsd:element name="city" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+    <xsd:element name="State" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+    <xsd:element name="zip" type="xsd:int" minOccurs="1" maxOccurs="1"/>
+</xsd:sequence>
+<xsd:attribute name="NearestAirport" type="xsd:string" use="required"/>
+</xsd:complexType>
+
+
+
+<!--  Phone number based on requirment  -->
+<xsd:simpleType name="PhoneType">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="\d{3}\-\d{3} \d{4}"/>
+</xsd:restriction>
+</xsd:simpleType>
+
+</xsd:schema>
