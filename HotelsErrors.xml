@@ -1,0 +1,151 @@
+<Hotel xmlns="http://venus.sod.asu.edu/WSRepository/xml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://venus.sod.asu.edu/WSRepository/xml Hotels.xsd">
+
+    <!-- Hotel 1 Example hotel-->
+<Hotel Rating="4.2">
+    
+    <Name>Weston</Name>
+    <phone>480-968-8885</phone>
+    <phone>800-937-8461</phone>
+    <Address 
+        NearestAirport="Sky Harbor">
+        <Number>11</Number>
+        <street>E.7th St</street>
+        <city>Tempe</city>
+        <State>AZ</State>
+        <zip>85281</zip>
+    </Address>
+    
+</Hotel>
+<!-- Hotel 2 Example hotel-->
+<Hotel>
+    <Name>Tempe Mission Palms</Name>
+    <phone>480-894-1400</phone>
+    
+    <Address>
+        
+        <Number>60</Number>
+        <street>E 5th st.</street>
+        <city>Tempe</city>
+        <State>AZ</State>
+        <zip>85281</zip>
+    </Address>
+</Hotel>
+<!-- Hotel 3 Example hotel-->
+<Hotel>
+    <Name>Hilton San Diego Bayfront</Name>
+    
+    
+    <Address 
+        NearestAirport="SAN (San Diego International Airport">
+        <Number>1</Number>
+        <street>Park Blvd</street>
+        <city>San Diego</city>
+        <State>California</State>
+        <zip>92101</zip>
+    </Address>
+</Hotel>
+<!-- Hotel 4 Example hotel-->
+<Hotel Rating="4.3">
+    <Name>Lancaster Marriott at Penn Square</Name>
+    <phone>717-239-1600</phone>
+    
+    <Address 
+        NearestAirport="Harrisburg international airport">
+        <Number>25</Number>
+        <street>s Queen st</street>
+        <city>Lancaster</city>
+        <State>PA</State>
+        <zip>17603</zip>
+    </Address>
+</Hotel>
+<!-- Hotel 5 Example hotel-->
+<Hotel>
+    <Name>Holiday Inn Lancaster by IHG</Name>
+    <phone>717-393-0900</phone>
+    
+    <Address 
+        NearestAirport="Harrisburg international airport">
+        <Number>26</Number>
+        <street>E Chestnut St.</street>
+        <city>Lancaster</city>
+        <State>PA</State>
+        <zip>17602</zip>
+    
+</Hotel>
+<!-- Hotel 6 Example hotel-->
+<Hotel>
+    <Name>Detroit Marriott at the Renaissance Center</Name>
+    <Name>Not real name</Name>
+    <phone>313-568-8000</phone>
+    <phone>210-724-9342</phone>
+    
+    <Address 
+        NearestAirport="Detroit Metropolitan Wayne County Airport">
+        <Number>400</Number>
+        <street>Renaissance Dr W</street>
+        <city>Detroit</city>
+        <State>MI</State>
+        <zip>48243</zip>
+    </Address>
+</Hotel>
+<!-- Hotel 7 Example hotel-->
+<Hotel>
+    <Name>Georgia Tech Hotel and Conference Center</Name>
+    <phone>404-347-9440</phone>
+    <phone>210-965-8599</phone>
+    
+    <Address 
+        NearestAirport="Hartsfield-Jackson Atlanta International Airport (ATL)">
+        <Number>800</Number>
+        <street>Spring St NW</street>
+        <city>Atlanta</city>
+        <State>GA</State>
+        <zip>30308</zip>
+    </Address>
+</Hotel>
+<!-- Hotel 8 Example hotel-->
+<Hotel Rating="4.1">
+    <Name>Hampton Inn Atlanta-Georgia Tech-Downtown</Name>
+    <phone>404-881-0881</phone>
+    
+    <Address
+        NearestAirport="Hartsfield-Jackson Atlanta International Airport (ATL)">
+        <Number>244</Number>
+        <street>North Avenue NW</street>
+        <city>Atlanta</city>
+        <State>GA</State>
+        <zip>30313</zip>
+    </Address>
+</Hotel>
+
+<!-- Hotel 9 Example hotel-->
+<Hotel >
+    <Name>Washington Square Hotel</Name>
+    <phone>800-222-0418</phone>
+    
+    <Address
+        NearestAirport="LaGuardia Airport (LGA)">
+        <Number>103</Number>
+        <street>Waverly Pl</street>
+        <city>New York</city>
+        <State>NY</State>
+        <zip>10011</zip>
+    </Address>
+</Hotel>
+
+<!-- Hotel 10 Example hotel-->
+<Hotel >
+    <Name>Hotel 31</Name>
+    <phone>212-685-3060</phone>
+    
+    <Address
+        NearestAirport="LaGuardia Airport (LGA)">
+        <Number>120</Number>
+        <street>E 31st St.</street>
+        <city>New York</city>
+        <State>NY</State>
+        <zip>10016</zip>
+    </Address>
+</Hotel>
+
+</Hotels>
