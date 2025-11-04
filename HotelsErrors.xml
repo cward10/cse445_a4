@@ -1,5 +1,4 @@
-<Hotel xmlns="https://cward10.github.io/cse445_a4/Hotels.xml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://cward10.github.io/cse445_a4/Hotels.xml Hotels.xsd">
-
+<Hotel xmlns="http://cward10.github.io/cse445_a4/Hotels.xml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://cward10.github.io/cse445_a4/Hotels.xml Hotels.xsd">
     <!-- Hotel 1 Example hotel-->
 <Hotel Rating="4.2">
     
@@ -150,4 +149,5 @@
 
 
 </Hotels>
+
 
