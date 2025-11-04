@@ -2,19 +2,18 @@
             xmlns="http://cward10.github.io/cse445_a4/Hotels.xml" 
             targetNamespace="http://cward10.github.io/cse445_a4/Hotels.xml" 
             elementFormDefault="qualified" attributeFormDefault="unqualified" >
-    
+
 <xsd:annotation>
 <xsd:documentation xml:lang="en"> CSE445 XSD file. </xsd:documentation>
 </xsd:annotation>
 <!-- Hotels-->
 <xsd:element name="Hotels" type="HotelsTypes"/>
 
+
+
 <xsd:complexType name="HotelsTypes">
 <xsd:sequence>
-
-    
     <xsd:element name="Hotel" type="HotelDetails" minOccurs="1" maxOccurs="unbounded"/>
-
 </xsd:sequence>
 </xsd:complexType>
 <!--  hotel details must contain name(1) phone(unbound) address(1) optional (rating) -->
@@ -22,7 +21,7 @@
 <xsd:complexType name="HotelDetails">
     <xsd:sequence>
         <xsd:element name="Name" type="xsd:string" minOccurs="1" maxOccurs="1"/>
-        <xsd:element name="phone" type="PhoneType" minOccurs="1" maxOccurs="unbounded"/>
+        <xsd:element name="phone" type="xsd:string" minOccurs="1" maxOccurs="unbounded"/>
         <xsd:element name="Address" type="AddressType" minOccurs="1" maxOccurs="1"/>
     </xsd:sequence>
 <xsd:attribute name="Rating" type="xsd:double" use="optional"/>
@@ -42,13 +41,6 @@
 
 
 
-<!--  Phone number based on requirment  -->
-<xsd:simpleType name="PhoneType">
-<xsd:restriction base="xsd:string">
-<xsd:pattern value="\d{3}\-\d{3} \d{4}"/>
-</xsd:restriction>
-</xsd:simpleType>
 
 
 </xsd:schema>
-
